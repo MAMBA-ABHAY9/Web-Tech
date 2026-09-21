@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
 <title>Personal Profile</title>
 </head>
 <body>
@@ -8,7 +9,7 @@
 <h1 align="center">Govt. College of Engineering & technology</h1>
 
 
-<img src="college.jpg" alt="Photo of college" width="250" height="300">
+<img src="college1.jpg" alt="Photo of college" width="300" height="300" >
 <h2>Student Name: Abhay Sharma</h2>
 <h2>Course: B.Tech - Computer Science Engineering</h2>
 
@@ -44,7 +45,6 @@ I am Abhay. A 3rd semester CSE Student in GCET Jammu. I have completed my school
     <li>Networking</li>
     <li>Watching Movies</li>
     <li>Reading Books</li>
-    <li></li>
 </ul>
 
 <hr>
@@ -213,22 +213,22 @@ I am Abhay. A 3rd semester CSE Student in GCET Jammu. I have completed my school
 
 <h3>Student Registration Form</h3>
 
-<form action="student.php" method="post">
+<form action="Submit.html" method="get">
 
     <label for="student_name">Name:</label><br>
-    <input type="text" id="student_name" name="student_name"><br><br>
+    <input type="text" id="student_name" name="student_name" required><br><br>
 
     <label for="student_email">Email:</label><br>
-    <input type="email" id="student_email" name="student_email"><br><br>
+    <input type="email" id="student_email" name="student_email" required><br><br>
 
     <label for="dob">Date of Birth:</label><br>
-    <input type="date" id="dob" name="dob"><br><br>
+    <input type="date" id="dob" name="dob" required><br><br>
 
     <label for="mobile">Mobile Number:</label><br>
-    <input type="tel" id="mobile" name="mobile"><br><br>
+    <input type="tel" id="mobile" name="mobile" required><br><br>
 
     <label>Gender:</label><br>
-    <input type="radio" id="gender_male" name="gender" value="Male">
+    <input type="radio" id="gender_male" name="gender" value="Male" >
     <label for="gender_male">Male</label>
     <input type="radio" id="gender_female" name="gender" value="Female">
     <label for="gender_female">Female</label>
@@ -257,7 +257,7 @@ I am Abhay. A 3rd semester CSE Student in GCET Jammu. I have completed my school
     <textarea id="address" name="address" rows="4" cols="30"></textarea>
     <br><br>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit"  >
     <input type="reset" value="Reset">
 
 </form>

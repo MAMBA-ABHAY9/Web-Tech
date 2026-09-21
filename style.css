@@ -1,0 +1,28 @@
+*{
+
+    background-color: #9db3b6;
+    color: #211b12;
+}
+
+
+
+
+img{
+margin: auto;
+display:block;
+border-radius: 50%;
+object-fit: cover;
+
+}
+table{
+    background: #f1eaea;
+    border : 0px;
+    border-collapse: collapse;
+    border:black;
+}
+h1{
+    color: antiquewhite;
+}
+
+
+

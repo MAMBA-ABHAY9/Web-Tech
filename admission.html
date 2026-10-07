@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Student Admission Form</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="faculty.html">Faculty</a>
+    <a href="students.html">Students</a>
+    <a href="gallery.html">Photo Gallery</a>
+    <a href="admission.html">Admission Form</a>
+    <a href="signin.html">Sign in</a>
+
+</nav>
+
+<div class="container">
+
+    <h2>Admission Form</h2>
+
+    <form>
+
+        <label>Name:</label>
+        <input type="text">
+
+        <label>Email:</label>
+        <input type="email">
+
+        <label>Date of Birth:</label>
+        <input type="date">
+
+        <label>Mobile Number:</label>
+        <input type="tel">
+
+        <label>Gender:</label>
+
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+
+        <br><br>
+
+        <label>Course:</label>
+
+        <select>
+            <option>Computer Science</option>
+            <option>Information Technology</option>
+            <option>Civil Engineering</option>
+            <option>Electronics Engineering</option>
+        </select>
+
+        <label>Hobbies:</label>
+
+        <input type="checkbox"> Reading
+        <input type="checkbox"> Sports
+        <input type="checkbox"> Music
+
+        <br><br>
+
+        <label>Address:</label>
+        <textarea rows="5"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</div>
+
+<footer>
+    <p>Government College of Engineering & Technology</p>
+</footer>
+
+</body>
+</html>

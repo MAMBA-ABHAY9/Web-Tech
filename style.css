@@ -1,28 +1,149 @@
-*{
-
-    background-color: #9db3b6;
-    color: #211b12;
+body {
+    margin: 0;
+    background-color: #f2f2f2;
 }
 
 
-
-
-img{
-margin: auto;
-display:block;
-border-radius: 50%;
-object-fit: cover;
-
+header {
+    background-color: #234f70;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
-table{
-    background: #f1eaea;
-    border : 0px;
+
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+h2 {
+    color: #234f70;
+}
+
+
+.college-image {
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+
+.faculty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.faculty-box {
+    border: 1px solid #aaa;
+    padding: 15px;
+    width: 250px;
+    background-color: #f7f7f7;
+}
+
+
+table {
+    width: 100%;
     border-collapse: collapse;
-    border:black;
-}
-h1{
-    color: antiquewhite;
 }
 
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: #234f70;
+    color: white;
+}
 
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 180px;
+}
+
+
+form {
+    width: 70%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 8px 15px;
+    margin-right: 5px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .college-image {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        width: 100%;
+    }
+}
